@@ -1,0 +1,21 @@
+server:
+  port: 8082
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/microservicios
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+eureka:
+  instance:
+    pref-ip-address: true
+  client:
+    fetch-regitry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8880/eureka
