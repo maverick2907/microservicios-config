@@ -32,13 +32,13 @@ resilience4j:
       ratingHotelBreaker:
         registerHealthIndicator: true
         eventConsumerBufferSize: 10
-        failruleRateThreshold: 50
+        failureRateThreshold: 50
         minimumNumberOfCalls: 5
         automaticTransitionFromOpenToHalfOpenEnabled: true
         waitDurationInOpenState: 6s
         permittedNumberOfCallsInHalfOpenState: 3
         slidingWindowSize: 10
-        slidingWindowType: COUNT_BASE
+        slidingWindowType: COUNT_BASED
 
 eureka:
   instance:
