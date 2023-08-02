@@ -9,7 +9,8 @@ spring:
           uri: lb://USUARIO-SERVICE
           predicates:
             - Path=/api/usuarios/**
-
+          filters:
+            - AuthFilter
         - id: HOTEL-SERVICE
           uri: lb://HOTEL-SERVICE
           predicates:
