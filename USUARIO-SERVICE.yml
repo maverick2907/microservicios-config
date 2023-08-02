@@ -25,7 +25,7 @@ management:
     enpoint:
       health:
         show-details: always
-        
+		
 resilience4j:
   circuitbreaker:
     instances:
@@ -39,7 +39,7 @@ resilience4j:
         permittedNumberOfCallsInHalfOpenState: 3
         slidingWindowSize: 10
         slidingWindowType: COUNT_BASED
-
+		
     retry:
       instances:
         ratingHotelService:
