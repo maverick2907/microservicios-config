@@ -4,6 +4,11 @@ server:
 jwt:
   secret: secret
 
+admin-paths:
+  paths:
+    -
+      uri: "/usuarios"
+      method: "POST"
 eureka:
   instance:
     pref-ip-address: true
