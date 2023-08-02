@@ -11,6 +11,7 @@ spring:
             - Path=/api/usuarios/**
           filters:
             - AuthFilter
+
         - id: HOTEL-SERVICE
           uri: lb://HOTEL-SERVICE
           predicates:
